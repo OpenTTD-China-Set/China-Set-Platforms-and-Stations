@@ -155,7 +155,7 @@ spritelayout spritelayout_%name_double_y {
         xextent: 6;
         yextent: 16;
         zextent: 6;
-}
+    }
 }
 
 item (FEAT_STATIONS, stn_%name_double) {

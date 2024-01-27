@@ -56,10 +56,30 @@ def append_to_lng(names_to_replace):
 
     # 添加新的文本，使文本对齐
     for name in names_to_replace:
-        content += f'\nSTR_NAME_{name.upper():<20}:Platform {name}'
+        content += f'\nSTR_NAME_{name.upper():<48}:Platform {name}'
 
     # 覆盖写入 english.lng 文件
     with open('lang/english.lng', 'w') as file:
+        file.write(content)
+
+def append_to_pnml(names_to_replace):
+    with open('cnsplatmenu.pnml', 'r') as file:
+        content = file.read()
+
+    index = content.find('// stations')
+    if index == -1:
+        raise ValueError('// stations not found in cnsplatmenu.pnml')
+
+    # 保留 // stations 及其之前的内容
+    index += len('// stations')
+    content = content[:index]
+
+    # 添加新的文本，使文本对齐
+    for name in names_to_replace:
+        content += f'\n#include "src/stn_{name}.pnml"'
+
+    # 覆盖写入 cnsplatmenu.pnml 文件
+    with open('cnsplatmenu.pnml', 'w') as file:
         file.write(content)
 
 def main():
@@ -71,6 +91,7 @@ def main():
     delete_png_files()
     copy_png_files()
     append_to_lng(names_to_replace)
+    append_to_pnml(names_to_replace)
     print('Done!')
 
 if __name__ == "__main__":
