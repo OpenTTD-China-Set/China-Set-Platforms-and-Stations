@@ -5,11 +5,11 @@ STR_GRF_DESC    :China Set: Platforms and Stations DEVELOP
 
 STR_CLS_CNP     :Class 1
 # class 1
-STR_NAME_EXLOW_OLD                                       :Platform exlow_old
-STR_NAME_HIGH_OLD                                        :Platform high_old
-STR_NAME_HIGH_TO_LOW_OLD                                 :Platform high_to_low_old
-STR_NAME_HIGH_TO_STAIRS_OLD                              :Platform high_to_stairs_old
-STR_NAME_LOW_OLD                                         :Platform low_old
-STR_NAME_LOW_TO_EXLOW_OLD                                :Platform low_to_exlow_old
-STR_NAME_STAIRS_OLD                                      :Platform stairs_old
-STR_NAME_STAIRS_TO_LOW_OLD                               :Platform stairs_to_low_old
+STR_NAME_STN_EXLOW_OLD                                   :Platform stn_exlow_old
+STR_NAME_STN_HIGH_OLD                                    :Platform stn_high_old
+STR_NAME_STN_HIGH_TO_LOW_OLD                             :Platform stn_high_to_low_old
+STR_NAME_STN_HIGH_TO_STAIRS_OLD                          :Platform stn_high_to_stairs_old
+STR_NAME_STN_LOW_OLD                                     :Platform stn_low_old
+STR_NAME_STN_LOW_TO_EXLOW_OLD                            :Platform stn_low_to_exlow_old
+STR_NAME_STN_STAIRS_OLD                                  :Platform stn_stairs_old
+STR_NAME_STN_STAIRS_TO_LOW_OLD                           :Platform stn_stairs_to_low_old

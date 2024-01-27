@@ -11,7 +11,7 @@ def delete_pnml_files():
         os.remove(file)
 
 def get_vox_names():
-    return [os.path.splitext(os.path.basename(file))[0] for file in glob.glob('vox/*.vox')]
+    return [os.path.splitext(os.path.basename(file))[0] for file in glob.glob('vox/stn_*.vox')]
 
 def replace_names(names_to_replace):
     for name_to_replace in names_to_replace:
@@ -21,7 +21,7 @@ def replace_names(names_to_replace):
         file_data = file_data.replace('%name', name_to_replace)
         file_data = file_data.replace('$name', name_to_replace.upper())
 
-        with open(f'src/stn_{name_to_replace}.pnml', 'w') as file:
+        with open(f'src/{name_to_replace}.pnml', 'w') as file:
             file.write(file_data)
 
 def run_gorender():
@@ -50,15 +50,15 @@ def append_to_lng(names_to_replace):
     if index == -1:
         raise ValueError('# class 1 not found in english.lng')
 
-    # 保留 # class 1 及其之前的内容
+    # keep # class 1 and its previous content
     index += len('# class 1')
     content = content[:index]
 
-    # 添加新的文本，使文本对齐
+    # add new text, align the text
     for name in names_to_replace:
         content += f'\nSTR_NAME_{name.upper():<48}:Platform {name}'
 
-    # 覆盖写入 english.lng 文件
+    # write to english.lng file
     with open('lang/english.lng', 'w') as file:
         file.write(content)
 
@@ -70,15 +70,15 @@ def append_to_pnml(names_to_replace):
     if index == -1:
         raise ValueError('// stations not found in cnsplatmenu.pnml')
 
-    # 保留 // stations 及其之前的内容
+    # keep // stations and its previous content
     index += len('// stations')
     content = content[:index]
 
-    # 添加新的文本，使文本对齐
+    # add new text
     for name in names_to_replace:
-        content += f'\n#include "src/stn_{name}.pnml"'
+        content += f'\n#include "src/{name}.pnml"'
 
-    # 覆盖写入 cnsplatmenu.pnml 文件
+    # write to cnsplatmenu.pnml file
     with open('cnsplatmenu.pnml', 'w') as file:
         file.write(content)
 

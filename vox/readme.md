@@ -6,10 +6,10 @@ This folder contains all voxel models used to create the sprites. You could use 
 
 |Filename|Author|Remarks|
 |---|---|---|
-|high_old|WenSim|
-|high_to_low_old|WenSim
-|high_to_stairs|WenSim
-|low_old|WenSim
-|low_to_none_old|WenSim
-|stairs_old|WenSim
-|stairs_to_low_old|WenSim
+|stn_high_old|WenSim|
+|stn_high_to_low_old|WenSim
+|stn_high_to_stairs|WenSim
+|stn_low_old|WenSim
+|stn_low_to_none_old|WenSim
+|stn_stairs_old|WenSim
+|stn_stairs_to_low_old|WenSim
