@@ -1,0 +1,42 @@
+spritelayout spritelayout_%name_x {
+    ground {
+        sprite: GROUNDSPRITE_RAIL_X;
+    }
+    building {
+        sprite: spriteset_%name_x;
+    }
+}
+
+spritelayout spritelayout_%name_y {
+    ground {
+        sprite: GROUNDSPRITE_RAIL_Y;
+    }
+    building {
+        sprite: spriteset_%name_y;
+    }
+}
+
+spriteset (spriteset_%name_x) {
+    template_empty()
+}
+alternative_sprites (spriteset_%name_x, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
+    template_standard_x("%name")
+}
+spriteset (spriteset_%name_y) {
+    template_empty()
+}
+alternative_sprites (spriteset_%name_y, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
+    template_standard_y("%name")
+}
+
+item (FEAT_STATIONS, stn_%name) {
+    property {
+        class:          "CNS1";
+        classname:      string(STR_CLS_CNP);
+        name:           string(STR_NAME_$name);
+    }
+    graphics {
+        sprite_layouts: [spritelayout_%name_x, spritelayout_%name_y];
+        spriteset_%name_x;
+    }
+}

@@ -1,0 +1,20 @@
+railtypetable{
+    RAIL,
+    ELRL,
+    MONO,
+    MGLV
+}
+
+// since we are doing a EZ set, defalut 1x zoom sprites will not be included
+template template_empty() {
+    [0, 0, 1, 1, 0, 0, CROP, "gfx/empty.png"]
+}
+
+// this template is for alternative sprites
+template template_standard_x (a) {
+    [   0,   0, 256, 312, -124, -184, "gfx/"+a+"_32bpp.png"]
+}
+
+template template_standard_y (a) {
+    [ 288,   0, 256, 312, -124, -184, "gfx/"+a+"_32bpp.png"]
+}

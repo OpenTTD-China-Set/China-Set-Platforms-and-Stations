@@ -1,0 +1,7 @@
+grf {
+    grfid: "NML9";
+    name: string(STR_GRF_NAME);
+    desc: string(STR_GRF_DESC);
+    version: 1; //first version
+    min_compatible_version: 1;
+}
