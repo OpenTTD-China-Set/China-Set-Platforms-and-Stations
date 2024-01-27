@@ -25,6 +25,7 @@ def replace_names(names_to_replace):
             file.write(file_data)
 
 def run_gorender():
+    # to enable fast mode, add '-f' to the command line
     for file in glob.glob('vox/*.vox'):
         subprocess.run(['gorender', '-s', '4', '-m', 'vox/files/manifest.json', '-palette', 'vox/files/ttd_palette.json', '-i', file])
 

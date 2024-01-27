@@ -12,9 +12,17 @@ template template_empty() {
 
 // this template is for alternative sprites
 template template_standard_x (a) {
-    [   0,   0, 256, 312, -124, -184, "gfx/"+a+"_32bpp.png"]
+    [   0,   0, 256, 312, -124, -188, "gfx/"+a+"_32bpp.png"]
 }
 
 template template_standard_y (a) {
-    [ 288,   0, 256, 312, -124, -184, "gfx/"+a+"_32bpp.png"]
+    [ 288,   0, 256, 312, -124, -188, "gfx/"+a+"_32bpp.png"]
+}
+
+template template_standard_alt_x (a) {
+    [ 576,   0, 256, 312, -204, -228, "gfx/"+a+"_32bpp.png"]
+}
+
+template template_standard_alt_y (a) {
+    [ 864,   0, 256, 312, -204, -228, "gfx/"+a+"_32bpp.png"]
 }
