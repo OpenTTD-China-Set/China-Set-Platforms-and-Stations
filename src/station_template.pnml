@@ -75,11 +75,11 @@ spritelayout spritelayout_%name_alt_y {
     }
     building {
         sprite: spriteset_%name_alt_y;
-        xoffset: 0;
-        yoffset: 10;
+        xoffset: 10;
+        yoffset: 0;
         zoffset: 0;
-        xextent: 16;
-        yextent: 6;
+        xextent: 6;
+        yextent: 16;
         zextent: 6;
     }
 }
@@ -149,11 +149,11 @@ spritelayout spritelayout_%name_double_y {
     }
     building {
         sprite: spriteset_%name_alt_y;
-        xoffset: 0;
-        yoffset: 10;
+        xoffset: 10;
+        yoffset: 0;
         zoffset: 0;
-        xextent: 16;
-        yextent: 6;
+        xextent: 6;
+        yextent: 16;
         zextent: 6;
 }
 }
