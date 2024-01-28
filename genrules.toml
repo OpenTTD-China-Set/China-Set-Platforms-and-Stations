@@ -1,0 +1,5 @@
+[generate_rules]
+no_generate = [
+    ['*_stairs_*.vox','^roof_*.vox'],
+    ['*_to_*.vox','^roof_*.vox']
+]

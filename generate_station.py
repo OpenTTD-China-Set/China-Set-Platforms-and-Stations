@@ -13,6 +13,9 @@ def delete_pnml_files():
 def get_vox_names():
     return [os.path.splitext(os.path.basename(file))[0] for file in glob.glob('vox/stn_*.vox')]
 
+def get_roof_names():
+    return [os.path.splitext(os.path.basename(file))[0] for file in glob.glob('vox/roof_*.vox')]
+
 def replace_names(names_to_replace):
     for name_to_replace in names_to_replace:
         with open('src/station_template.pnml', 'r') as file:
@@ -24,10 +27,11 @@ def replace_names(names_to_replace):
         with open(f'src/{name_to_replace}.pnml', 'w') as file:
             file.write(file_data)
 
-def run_gorender():
+def run_gorender(gorender_param):
     # to enable fast mode, add '-f' to the command line
     for file in glob.glob('vox/*.vox'):
-        subprocess.run(['gorender', '-s', '4', '-m', 'vox/files/manifest.json', '-palette', 'vox/files/ttd_palette.json', '-i', file])
+        print(f'Processing {file}...')
+        subprocess.run(['gorender', '-s', '4', '-m', 'vox/files/manifest.json', '-palette', 'vox/files/ttd_palette.json', '-i', file, gorender_param])
 
 def delete_png_files():
     for file in glob.glob('gfx/*.png'):
@@ -87,7 +91,7 @@ def main():
     delete_pnml_files()
     names_to_replace = get_vox_names()
     replace_names(names_to_replace)
-    run_gorender()
+    run_gorender('')
     delete_png_files()
     copy_png_files()
     append_to_lng(names_to_replace)

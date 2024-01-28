@@ -1,16 +1,15 @@
-##grflangid 0x01
+##grflangid 0x56
 
-STR_GRF_NAME    :CNS: Platforms and Stations INDEV
-STR_GRF_DESC    :China Set: Platforms and Stations DEVELOP
+STR_GRF_NAME    :中国包：站台与车站 INDEV
+STR_GRF_DESC    :正在开发中
 
-STR_CLS_CNP     :CNSPS: Individually Placed Platforms
+STR_CLS_CNP     :CNSPS：独立站台组件
 # class 1
 STR_NAME_STN_COBBLE                                      :Platform stn_cobble
 STR_NAME_STN_EXLOW_BROWN                                 :Platform stn_exlow_brown
 STR_NAME_STN_EXLOW_COBBLE                                :Platform stn_exlow_cobble
 STR_NAME_STN_HIGH_BROWN                                  :Platform stn_high_brown
 STR_NAME_STN_HIGH_TO_LOW_BROWN                           :Platform stn_high_to_low_brown
-STR_NAME_STN_HIGH_TO_NONE_BROWN                          :Platform stn_high_to_none_brown
 STR_NAME_STN_HIGH_TO_STAIRS_BROWN                        :Platform stn_high_to_stairs_brown
 STR_NAME_STN_LOW_BROWN                                   :Platform stn_low_brown
 STR_NAME_STN_LOW_COBBLE                                  :Platform stn_low_cobble
