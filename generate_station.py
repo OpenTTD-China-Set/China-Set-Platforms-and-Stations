@@ -85,18 +85,3 @@ def append_to_pnml(names_to_replace):
     # write to cnsplatmenu.pnml file
     with open('cnsplatmenu.pnml', 'w') as file:
         file.write(content)
-
-def main():
-    check_os()
-    delete_pnml_files()
-    names_to_replace = get_vox_names()
-    replace_names(names_to_replace)
-    run_gorender('')
-    delete_png_files()
-    copy_png_files()
-    append_to_lng(names_to_replace)
-    append_to_pnml(names_to_replace)
-    print('Done!')
-
-if __name__ == "__main__":
-    main()

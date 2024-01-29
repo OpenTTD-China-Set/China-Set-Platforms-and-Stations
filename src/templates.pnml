@@ -9,10 +9,11 @@ railtypetable{
 template template_empty() {
     [0, 0, 1, 1, 0, 0, CROP, "gfx/empty.png"]
 }
+// yay I love empty.png
 
 // this template is for alternative sprites
 template template_standard_x (a) {
-    [   0,   0, 256, 312, -124, -185, "gfx/"+a+"_32bpp.png"]
+    [   0,   0, 256, 312, -127, -185, "gfx/"+a+"_32bpp.png"]
 }
 
 template template_standard_y (a) {
@@ -20,9 +21,9 @@ template template_standard_y (a) {
 }
 
 template template_standard_alt_x (a) {
-    [ 576,   0, 256, 312, -207, -225, "gfx/"+a+"_32bpp.png"]
+    [  32, 312, 256, 312, -207, -225, "gfx/"+a+"_32bpp.png"]
 }
 
 template template_standard_alt_y (a) {
-    [ 864,   0, 256, 312,  -44, -225, "gfx/"+a+"_32bpp.png"]
+    [ 320, 312, 256, 312,  -44, -225, "gfx/"+a+"_32bpp.png"]
 }

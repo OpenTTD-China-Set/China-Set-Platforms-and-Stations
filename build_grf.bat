@@ -7,4 +7,3 @@ nmlc cnsplat.nml -o cnsplatform.grf
 copy cnsplatform.grf D:\Data\Documents\OpenTTD\newgrf
 pause
 goto start
-exit

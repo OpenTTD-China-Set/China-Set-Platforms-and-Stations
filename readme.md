@@ -16,7 +16,7 @@ You can get the source at [GitHub](https://www.github.com/WenSimEHRP/China-Set-P
 
 ### 3.1 Windows
 
-To build, run `generate_station` first, then run `build.bat`.
+To build, run `build_graphics.py` first, then run `build_grf.bat`.
 You will need to download (and install) `nmlc`, `gorender` and `python 3.10` first. Remember to add `nmlc` and `gorender` to `PATH`, otherwise you have to tweak the mentioned scripts to make it run.
 
 ## 4 Credits
