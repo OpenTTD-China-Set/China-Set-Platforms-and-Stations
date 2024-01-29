@@ -6,6 +6,6 @@ cnsplatform.grf
 devnotes.txt
 /__pycache__
 #ignore all stn files in src folder and all 32bpp png files in gfx folder
-src/stn_*.pnml
 gfx/*32bpp.png
 env
+generated/*.pnml

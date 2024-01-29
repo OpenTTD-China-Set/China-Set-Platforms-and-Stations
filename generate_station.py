@@ -3,7 +3,7 @@ import glob
 import subprocess
 
 def delete_pnml_files():
-    for file in glob.glob('src/stn_*.pnml'):
+    for file in glob.glob('generated/*.pnml'):
         os.remove(file)
 
 def get_vox_names():
@@ -20,7 +20,7 @@ def replace_names(names_to_replace):
         file_data = file_data.replace('%name', name_to_replace)
         file_data = file_data.replace('$name', name_to_replace.upper())
 
-        with open(f'src/{name_to_replace}.pnml', 'w') as file:
+        with open(f'generated/{name_to_replace}.pnml', 'w') as file:
             file.write(file_data)
 
 def run_gorender(gorender_param):
@@ -81,7 +81,7 @@ def append_to_pnml(names_to_replace):
 
     # add new text
     for name in names_to_replace:
-        content += f'\n#include "src/{name}.pnml"'
+        content += f'\n#include "generated/{name}.pnml"'
 
     # write to cnsplatmenu.pnml file
     with open('cnsplatmenu.pnml', 'w') as file:
