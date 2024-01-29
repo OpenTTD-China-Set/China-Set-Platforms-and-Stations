@@ -5,7 +5,7 @@
   "tiled_normals": true,
   "soften_edges": 0,
   "alpha_edge_threshold": 0.75,
-  "sampler": "",
+  "sampler": "disc",
   "accuracy": 10,
   "overlap": 0.02,
   "brightness": -0.025,

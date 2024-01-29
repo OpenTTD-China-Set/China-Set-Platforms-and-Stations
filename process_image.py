@@ -11,7 +11,13 @@ def add_to_bottom(image1, image2):
 
 def mirror_image(path):
     # mirror and add the mirrored image to the bottom of the original image
-    for file in glob.glob(f'{path}/stn_*32bpp.png'):
+    files = glob.glob(f'{path}/stn_*32bpp.png')
+    counter = 0
+    total_files = len(files)
+    align = len(str(total_files))
+    for file in files:
+        counter += 1
+        print(f'{counter:<{align}}/{total_files} Mirroring {file}...')
         image = Image.open(file)
         original_image = image.copy()
         image = ImageOps.mirror(image)

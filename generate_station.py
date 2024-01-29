@@ -2,10 +2,6 @@ import os
 import glob
 import subprocess
 
-def check_os():
-    if os.name != 'nt':
-        raise SystemExit('This script can only be run on Windows.')
-
 def delete_pnml_files():
     for file in glob.glob('src/stn_*.pnml'):
         os.remove(file)
@@ -29,8 +25,13 @@ def replace_names(names_to_replace):
 
 def run_gorender(gorender_param):
     # to enable fast mode, add '-f' to the command line
-    for file in glob.glob('vox/*.vox'):
-        print(f'Processing {file}...')
+    files = glob.glob('vox/*.vox')
+    counter = 0
+    total_files = len(files)
+    align = len(str(total_files))
+    for file in files:
+        counter += 1
+        print(f'{counter:<{align}}/{total_files} Processing {file}...')
         subprocess.run(['gorender', '-s', '4', '-m', 'vox/files/manifest.json', '-palette', 'vox/files/ttd_palette.json', '-i', file, gorender_param])
 
 def delete_png_files():
