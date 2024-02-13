@@ -11,3 +11,5 @@ The starting coordinates or mirrored images are:
 - 320,312
 - 608,312
 - 896,312
+
+All graphics except `empty.png` in this folder are auto-generated.

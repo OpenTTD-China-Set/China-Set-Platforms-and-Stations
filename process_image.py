@@ -9,15 +9,13 @@ def add_to_bottom(image1, image2):
     new_image.paste(image2, (0, image1.height))
     return new_image
 
+from tqdm import tqdm
+
 def mirror_image(path):
     # mirror and add the mirrored image to the bottom of the original image
     files = glob.glob(f'{path}/stn_*32bpp.png')
-    counter = 0
     total_files = len(files)
-    align = len(str(total_files))
-    for file in files:
-        counter += 1
-        print(f'{counter:<{align}}/{total_files} Mirroring {file}...')
+    for file in tqdm(files, total=total_files, desc='Mirroring', unit='file', ncols=120):
         image = Image.open(file)
         original_image = image.copy()
         image = ImageOps.mirror(image)

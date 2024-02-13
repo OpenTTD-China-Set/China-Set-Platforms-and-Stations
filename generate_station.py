@@ -1,6 +1,7 @@
 import os
 import glob
 import subprocess
+from tqdm import tqdm
 
 def delete_pnml_files():
     for file in glob.glob('generated/*.pnml'):
@@ -26,12 +27,8 @@ def replace_names(names_to_replace):
 def run_gorender(gorender_param):
     # to enable fast mode, add '-f' to the command line
     files = glob.glob('vox/*.vox')
-    counter = 0
     total_files = len(files)
-    align = len(str(total_files))
-    for file in files:
-        counter += 1
-        print(f'{counter:<{align}}/{total_files} Processing {file}...')
+    for file in tqdm(files, total=total_files, desc='Rendering', unit='file', ncols = 120):
         subprocess.run(['gorender', '-s', '4', '-m', 'vox/files/manifest.json', '-palette', 'vox/files/ttd_palette.json', '-i', file, gorender_param])
 
 def delete_png_files():
@@ -61,7 +58,7 @@ def append_to_lng(names_to_replace):
 
     # add new text, align the text
     for name in names_to_replace:
-        content += f'\nSTR_NAME_{name.upper():<48}:Platform {name}'
+        content += f'\nSTR_NAME_{name.upper():<48}:{name.replace("stn_","").replace("_", " ").capitalize()} platform'
 
     # write to english.lng file
     with open('lang/english.lng', 'w') as file:

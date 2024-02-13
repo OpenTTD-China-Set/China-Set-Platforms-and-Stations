@@ -1,3 +1,4 @@
+// single sided 1
 spritelayout spritelayout_%name_x {
     ground {
         sprite: GROUNDSPRITE_RAIL_X;
@@ -53,7 +54,7 @@ item (FEAT_STATIONS, stn_%name) {
     }
 }
 
-// alternative
+// single sided 2
 spritelayout spritelayout_%name_alt_x {
     ground {
         sprite: GROUNDSPRITE_RAIL_X;
