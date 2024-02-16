@@ -1,0 +1,110 @@
+// single sided 1
+spritelayout spritelayout_%name_x {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+    }
+    building {
+        sprite: spriteset_%name_x;
+        xoffset: 0;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 6;
+    }
+}
+
+spritelayout spritelayout_%name_y {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+    }
+    building {
+        sprite: spriteset_%name_y;
+        xoffset: 0;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 6;
+    }
+}
+
+spriteset (spriteset_%name_x) {
+    template_empty()
+}
+alternative_sprites (spriteset_%name_x, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
+    template_standard_building("%name", 0)
+}
+spriteset (spriteset_%name_y) {
+    template_empty()
+}
+alternative_sprites (spriteset_%name_y, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
+    template_standard_building("%name", 1)
+}
+
+item (FEAT_STATIONS, stn_%name) {
+    property {
+        class:          "CNS1";
+        classname:      string(STR_CLS_CNP);
+        name:           string(STR_NAME_$name);
+    }
+    graphics {
+        sprite_layouts: [spritelayout_%name_x, spritelayout_%name_y];
+        spriteset_%name_x;
+    }
+}
+
+spritelayout spritelayout_%name_x_alt {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+    }
+    building {
+        sprite: spriteset_%name_x_alt;
+        xoffset: 0;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 6;
+    }
+}
+
+spritelayout spritelayout_%name_y_alt {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+    }
+    building {
+        sprite: spriteset_%name_y_alt;
+        xoffset: 0;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 6;
+    }
+}
+
+spriteset (spriteset_%name_x_alt) {
+    template_empty()
+}
+alternative_sprites (spriteset_%name_x_alt, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
+    template_standard_building("%name", 2)
+}
+spriteset (spriteset_%name_y_alt) {
+    template_empty()
+}
+alternative_sprites (spriteset_%name_y_alt, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
+    template_standard_building("%name", 3)
+}
+
+item (FEAT_STATIONS, stn_%name_alt) {
+    property {
+        class:          "CNS1";
+        classname:      string(STR_CLS_CNP);
+        name:           string(STR_NAME_$name);
+    }
+    graphics {
+        sprite_layouts: [spritelayout_%name_x_alt, spritelayout_%name_y_alt];
+        spriteset_%name_x_alt;
+    }
+}

@@ -1,9 +1,10 @@
 @echo off
 :start
-py nml_patcher.py -f "cnsplatmenu.pnml" -o "cnsplat.nml" -b 1 -v 1
-nmlc cnsplat.nml -o cnsplatform.grf
+py nml_patcher.py -f "cnsps.pnml" -o "cnsps.nml" -b 1 -v 1
+nmlc cnsps.nml -o cnsplatform.grf
 
 :: move to newgrf directory
 copy cnsplatform.grf D:\Data\Documents\OpenTTD\newgrf
 pause
+:: debug purpose, goto start to run again
 goto start

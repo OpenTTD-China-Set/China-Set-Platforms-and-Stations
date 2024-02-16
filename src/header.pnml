@@ -1,7 +1,10 @@
 grf {
-    grfid: "NML9";
+    grfid: "CNSP";
     name: string(STR_GRF_NAME);
     desc: string(STR_GRF_DESC);
-    version: 1; //first version
+    version: 1; //first version, INDEV
     min_compatible_version: 1;
 }
+/* ChinaSet: Stations and Platforms is a free game extension for OpenTTD
+distrubuted under the GPL v2.0 license. It is a collection of stations and platforms
+based on the Chinese railway system. */

@@ -9,3 +9,8 @@ devnotes.txt
 gfx/*32bpp.png
 env
 generated/*.pnml
+
+cnsps.pnml
+cnsps.nml
+
+updated_list.txt

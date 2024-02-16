@@ -1,0 +1,7 @@
+##grflangid 0x01
+
+STR_GRF_NAME    :CNS: Platforms and Stations INDEV
+STR_GRF_DESC    :China Set: Platforms and Stations DEVELOP
+STR_CLS_CNP     :CNSPS: Individually Placed Platforms
+
+# finish utilities
