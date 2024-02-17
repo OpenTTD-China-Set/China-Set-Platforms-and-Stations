@@ -188,6 +188,8 @@ def main():
         lng_write_list.append(f'STR_NAME_{file_original_name.upper():<48}:{" ".join(file_original_name.split("_")[1:]).replace("_"," ").capitalize()}')
         menu_write_list.append(f'#include "generated/{file_original_name}.pnml"')
 
+    menu_write_list.append(ReadFile('cnspsend.pnml.template', 'string'))
+
     WriteFile('lang/english.lng', lng_write_list)
     WriteFile('cnsps.pnml', menu_write_list)
 

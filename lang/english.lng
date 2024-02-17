@@ -12,7 +12,7 @@ STR_NAME_BUL_YELLOW_TICKETOFFICE                         :Yellow ticketoffice
 STR_NAME_BUL_YELLOW_WAITINGROOM                          :Yellow waitingroom
 STR_NAME_BUL_YELLOW_WAITINGROOM_EXTENDED1                :Yellow waitingroom extended1
 STR_NAME_BUL_YELLOW_WAITINGROOM_EXTENDED2                :Yellow waitingroom extended2
-STR_NAME_FUL_CONCRETE                                    :Concrete
+STR_NAME_FUL_LOW_CONCRETE                                :Low concrete
 STR_NAME_PLM_HIGH_TO_LOW_BROWN                           :High to low brown
 STR_NAME_PLM_HIGH_TO_NONE_BROWN                          :High to none brown
 STR_NAME_PLM_LOW_TO_EXLOW_BROWN                          :Low to exlow brown

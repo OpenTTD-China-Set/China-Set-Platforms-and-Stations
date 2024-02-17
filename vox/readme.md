@@ -11,6 +11,7 @@ All files that ends with `mirrored` means that they are mirrored model, and the 
 |plt|station **pl**a**t**form|
 |plm|station **pl**atform **m**irrored|
 |bul|station **bu**i**l**ding|
+|bum|station **bu**ilding **m**irrored|
 |ful|**ful**l platform|
 
 A standard voxel model file's name should have these componets:
