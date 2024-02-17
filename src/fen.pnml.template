@@ -1,4 +1,5 @@
 // single sided 1
+/*
 spritelayout spritelayout_%name_x {
     ground {
         sprite: GROUNDSPRITE_RAIL_X;
@@ -28,20 +29,20 @@ spritelayout spritelayout_%name_y {
         zextent: 6;
     }
 }
-
+*/
 spriteset (spriteset_%name_x) {
     template_empty()
 }
 alternative_sprites (spriteset_%name_x, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_0("%name")
+    template_standard_fence_0("%name")
 }
 spriteset (spriteset_%name_y) {
     template_empty()
 }
 alternative_sprites (spriteset_%name_y, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_1("%name")
+    template_standard_fence_1("%name")
 }
-
+/*
 item (FEAT_STATIONS, stn_%name) {
     property {
         class:          "CNS1";
@@ -53,8 +54,9 @@ item (FEAT_STATIONS, stn_%name) {
         spriteset_%name_x;
     }
 }
-
+*/
 // single sided 2
+/*
 spritelayout spritelayout_%name_alt_x {
     ground {
         sprite: GROUNDSPRITE_RAIL_X;
@@ -84,20 +86,20 @@ spritelayout spritelayout_%name_alt_y {
         zextent: 6;
     }
 }
-
+*/
 spriteset (spriteset_%name_alt_x) {
     template_empty()
 }
 alternative_sprites (spriteset_%name_alt_x, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_2("%name")
+    template_standard_fence_2("%name")
 }
 spriteset (spriteset_%name_alt_y) {
     template_empty()
 }
 alternative_sprites (spriteset_%name_alt_y, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_3("%name")
+    template_standard_fence_3("%name")
 }
-
+/*
 item (FEAT_STATIONS, stn_%name_alt) {
     property {
         class:          "CNS1";
@@ -109,8 +111,9 @@ item (FEAT_STATIONS, stn_%name_alt) {
         spriteset_%name_x;
     }
 }
-
+*/
 // double sided
+/*
 spritelayout spritelayout_%name_double_x {
     ground {
         sprite: GROUNDSPRITE_RAIL_X;
@@ -158,7 +161,8 @@ spritelayout spritelayout_%name_double_y {
         zextent: 6;
     }
 }
-
+*/
+/*
 item (FEAT_STATIONS, stn_%name_double) {
     property {
         class:          "CNS1";
@@ -170,3 +174,4 @@ item (FEAT_STATIONS, stn_%name_double) {
         spriteset_%name_x;
     }
 }
+*/

@@ -56,3 +56,158 @@ item(FEAT_STATIONS, stn_fenced_%name0_%name1){
         sprite_layouts: [spritelayout_fenced_%name0_%name1_x, spritelayout_fenced_%name0_%name1_y];
     }
 }
+
+spritelayout spritelayout_fenced_%name0_%name1_alt_x{
+    ground {
+        sprite: GROUNDSPRITE_RAIL_X;
+    }
+    building {
+        sprite: spriteset_%name0_alt_x;
+        xoffset: 0;
+        yoffset: 10;
+        zoffset: 0;
+        xextent: 16;
+        yextent: 6;
+        zextent: 6;
+    }
+    building {
+        sprite: spriteset_%name1_alt_x;
+        xoffset: 0;
+        yoffset: 15;
+        zoffset: 0;
+        xextent: 16;
+        yextent: 1;
+        zextent: 6;
+    }
+}
+
+spritelayout spritelayout_fenced_%name0_%name1_alt_y{
+    ground {
+        sprite: GROUNDSPRITE_RAIL_Y;
+    }
+    building {
+        sprite: spriteset_%name0_alt_y;
+        xoffset: 10;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 6;
+        yextent: 16;
+        zextent: 6;
+    }
+    building {
+        sprite: spriteset_%name1_alt_y;
+        xoffset: 15;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 1;
+        yextent: 16;
+        zextent: 6;
+    }
+}
+
+item(FEAT_STATIONS, stn_fenced_%name0_%name1_alt){
+    property {
+        class:          "CNSF";
+        classname:      string(STR_CLS_CNSF);
+        name:           string(STR_NAME_$name0_$name1);
+    }
+    graphics {
+        sprite_layouts: [spritelayout_fenced_%name0_%name1_alt_x, spritelayout_fenced_%name0_%name1_alt_y];
+    }
+}
+/*
+spritelayout spritelayout_fenced_%name0_%name1_double_x{
+    ground {
+        sprite: GROUNDSPRITE_RAIL_X;
+    }
+        building {
+        sprite: spriteset_%name0_x;
+        xoffset: 0;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 16;
+        yextent: 6;
+        zextent: 6;
+    }
+    building {
+        sprite: spriteset_%name1_x;
+        xoffset: 0;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 16;
+        yextent: 1;
+        zextent: 6;
+    }
+    building {
+        sprite: spriteset_%name0_alt_x;
+        xoffset: 0;
+        yoffset: 10;
+        zoffset: 0;
+        xextent: 16;
+        yextent: 6;
+        zextent: 6;
+    }
+    building {
+        sprite: spriteset_%name1_alt_x;
+        xoffset: 0;
+        yoffset: 15;
+        zoffset: 0;
+        xextent: 16;
+        yextent: 1;
+        zextent: 6;
+    }
+}
+
+spritelayout spritelayout_fenced_%name0_%name1_double_y{
+    ground {
+        sprite: GROUNDSPRITE_RAIL_Y;
+    }
+    building {
+        sprite: spriteset_%name0_y;
+        xoffset: 0;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 6;
+        yextent: 16;
+        zextent: 6;
+    }
+    building {
+        sprite: spriteset_%name1_y;
+        xoffset: 0;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 1;
+        yextent: 16;
+        zextent: 6;
+    }
+    building {
+        sprite: spriteset_%name0_alt_y;
+        xoffset: 10;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 6;
+        yextent: 16;
+        zextent: 6;
+    }
+    building {
+        sprite: spriteset_%name1_alt_y;
+        xoffset: 15;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 1;
+        yextent: 16;
+        zextent: 6;
+    }
+}
+
+item(FEAT_STATIONS, stn_fenced_%name0_%name1_double){
+    property {
+        class:          "CNSF";
+        classname:      string(STR_CLS_CNSF);
+        name:           string(STR_NAME_$name0_$name1);
+    }
+    graphics {
+        sprite_layouts: [spritelayout_fenced_%name0_%name1_double_x, spritelayout_fenced_%name0_%name1_double_y];
+    }
+}
+*/
