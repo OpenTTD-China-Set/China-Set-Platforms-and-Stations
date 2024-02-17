@@ -1,6 +1,7 @@
 import subprocess
 import glob
 import os
+from typing import List
 
 def GetUpdatedFiles(path, type = 'vox', database_path = 'updated_list.txt'):
     '''
@@ -87,15 +88,24 @@ def DeleteFiles(path, type, prefix = '', suffix = ''):
         os.remove(file)
 
 
-def ProcessPnmlFile(template_path, names_to_replace):
+def ProcessPnmlFile(template_path: str, names_to_replace: str|list) -> str:
     '''
-    receives: template_path string, names_to_replace string
+    receives: template_path string, names_to_replace string or list
     returns: string, replaces %name and $name in the template file with the given names_to_replace
     '''
-    with open(template_path, 'r') as file:
-        file_data = file.read()
-        file_data = file_data.replace('%name', names_to_replace)
-        file_data = file_data.replace('$name', names_to_replace.upper())
+    if isinstance(names_to_replace, str):
+        with open(template_path, 'r') as file:
+            file_data = file.read()
+            file_data = file_data.replace('%name', names_to_replace)
+            file_data = file_data.replace('$name', names_to_replace.upper())
+    elif isinstance(names_to_replace, list):
+        with open(template_path, 'r') as file:
+            file_data = file.read()
+            for index,name in enumerate(names_to_replace):
+                file_data = file_data.replace(f'%name{index}', name)
+                file_data = file_data.replace(f'$name{index}', name.upper())
+    else:
+        raise ValueError('names_to_replace must be a string or a list')
     return file_data
 
 
@@ -118,6 +128,32 @@ def ReadFile(path, type = 'list'):
     with open(path, 'r') as file:
         content = file.read()
     return content if type == 'string' else content.splitlines()
+
+
+def GenerateFencedStations(fenced_type: str, template_folder: str = 'src', input_folder: str = 'generated', target_folder: str = 'generated') -> tuple[list[str], list[str]]:
+    '''
+    receives: fenced_type string, template_folder string, input_folder string, target_folder string
+    returns: None, generates fenced stations from the given template folder and input folder and writes them to the target folder
+    '''
+    fenced_type_list = GetFileList(input_folder, 'pnml', fenced_type)
+    fence_list = GetFileList(input_folder, 'pnml', 'fen_')
+    lng_write_list: List[str] = []
+    menu_write_list: List[str] = []
+
+    for item in fenced_type_list:
+        item_base_name = os.path.basename(item).split(".")[0]
+
+        for fence in fence_list:
+            fence_base_name = os.path.basename(fence).split(".")[0]
+            file_write_name = f'{item_base_name}_{fence_base_name}'
+
+            with open(os.path.join(target_folder, f'fenced_{file_write_name}.pnml'), 'w+') as file:
+                content = ProcessPnmlFile(os.path.join(template_folder, f'fenced_{fenced_type}.pnml.template'), [item_base_name, fence_base_name])
+                lng_write_list.append(f'STR_NAME_{file_write_name.upper():<48}:{" ".join(file_write_name.split("_")[1:]).replace("_"," ").replace("fen","").capitalize()}')
+                menu_write_list.append(f'#include "{os.path.join(target_folder, f"fenced_{file_write_name}.pnml")}"')
+                file.write(content)
+
+    return lng_write_list, menu_write_list
 
 
 def main():
@@ -170,12 +206,12 @@ def main():
         if args.reprocess:
             # we only want to delete the files if we are reprocessing all the graphics
             DeleteFiles('gfx', 'png', '', '_32bpp')
-        DeleteFiles('generated', 'pnml')
 
         CopyFiles('vox', 'png', 'gfx', '', '_32bpp')
         DeleteFiles('vox', 'png', '', '_8bpp')
         DeleteFiles('vox', 'png', '', '_mask')
 
+    DeleteFiles('generated', 'pnml')
     lng_write_list = ReadFile('lang/english.lng.template')
     menu_write_list = ReadFile('cnsps.pnml.template')
 
@@ -189,6 +225,11 @@ def main():
         menu_write_list.append(f'#include "generated/{file_original_name}.pnml"')
 
     menu_write_list.append(ReadFile('cnspsend.pnml.template', 'string'))
+
+    for item in tqdm(['plt'], desc='Writing fenced stations', unit='file', ncols = ncols_size):
+        lng_write_list_func, menu_write_list_func = GenerateFencedStations(item)
+        lng_write_list.extend(lng_write_list_func)
+        menu_write_list.extend(menu_write_list_func)
 
     WriteFile('lang/english.lng', lng_write_list)
     WriteFile('cnsps.pnml', menu_write_list)

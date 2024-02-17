@@ -2,6 +2,10 @@
 
 STR_GRF_NAME    :CNS: Platforms and Stations INDEV
 STR_GRF_DESC    :China Set: Platforms and Stations DEVELOP
-STR_CLS_CNP     :CNSPS: Individually Placed Platforms
 
+STR_CLS_CNP     :CNSPS: StationComponents(TM)
+STR_CLS_CNSF    :CNSPS: FencedStations(TM)
+STR_CLS_CNSA    :CNSPS: AutoStations(TM)
+
+STR_STN_AUTO_LOW_BROWN          :AutoStation Low Brown
 # finish utilities
