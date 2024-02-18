@@ -217,8 +217,8 @@ def main():
 
     for item in tqdm(voxel_list, desc = 'Writing', unit='file', ncols = ncols_size):
         file_original_name = (os.path.basename(item)).split('.')[0]
-        if file_original_name.split('_')[-1] == 'mirrored':
-            continue
+        # if file_original_name.split('_')[-1] == 'mirrored':
+        #     continue
         WriteFile(f"generated/{file_original_name}.pnml",
                   ProcessPnmlFile(f'src/{file_original_name.split("_")[0]}.pnml.template', file_original_name))
         lng_write_list.append(f'STR_NAME_{file_original_name.upper():<48}:{" ".join(file_original_name.split("_")[1:]).replace("_"," ").capitalize()}')
