@@ -1,14 +1,17 @@
 ##grflangid 0x01
 
-STR_GRF_NAME    :CNS: Platforms and Stations INDEV
-STR_GRF_DESC    :China Set: Platforms and Stations DEVELOP
+STR_GRF_NAME    :CNS: Platforms and Stations {VERSION}
+STR_GRF_DESC    :ChinaSet: Platforms and Stations {VERSION}
+STR_GRF_URL     :{URL}
 
+STR_CLS_CNPC    :CNSPS: Credits
 STR_CLS_CNP     :CNSPS: StationComponents(TM)
 STR_CLS_CNSF    :CNSPS: FencedStations(TM)
 STR_CLS_CNSA    :CNSPS: AutoStations(TM)
 
 STR_STN_AUTO_LOW_BROWN          :AutoStation Low Brown
 # finish utilities
+
 STR_NAME_BUL_HIGH_WHITE_1                                :High white 1
 STR_NAME_BUL_HIGH_WHITE_2                                :High white 2
 STR_NAME_BUL_YELLOW_1                                    :Yellow 1
