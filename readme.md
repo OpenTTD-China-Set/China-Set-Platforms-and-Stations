@@ -1,10 +1,10 @@
 # CNS: Platforms and Stations README
 
+*CNSPS*
 
-## 1 About
+## 1 What is this?
 
-CNS Platforms and Stations contains new platforms inspired by Chinese stations.
-CNS is not the abbriviation of anything.
+ChinaSet: Platforms and Stations is a NewGRF for OpenTTD. It is a part of the ChinaSet family. This NewGRF contains platforms and stations inspired by real life Chinese transport stations.
 
 ## 2 General information
 
@@ -12,14 +12,22 @@ TBC
 
 ## 3 Building
 
-You can get the source at [GitHub](https://www.github.com/WenSimEHRP/China-Set-Platforms-and-Stations)
+You can get the source at GitHub (https://www.github.com/WenSimEHRP/China-Set-Platforms-and-Stations)
+We suggest building this NewGRF on Windows for maximum compatibility.
 
-### 3.1 Windows
-
-To build, run `generate_code_and_sprite.py` first, then run `build_grf.bat`.
-You will need to download (and install) `nmlc`, `gorender` and `python 3.10` first. Remember to add `nmlc` and `gorender` to `PATH`, otherwise you have to tweak the mentioned scripts to make it run.
+The GRF has these requirements:
+|Name|Link|
+|---|---|
+|NML||
+|gorender||
+|python3||
 
 ## 4 Credits
 
-TBC
+During development this project recieved help from 3 people. Here is a list for all the contributors.
 
+|Name|Role|
+|---|---|
+|WenSim|coding, voxel modelling|
+|NACHN|voxel modelling|
+|DongFeng<sub>4</sub> 3110|voxel modelling|
