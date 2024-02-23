@@ -1,7 +1,7 @@
 /.nmlcache
 /backups
 cnsplat.nml
-cnsplatform.grf
+*.grf
 /vox/*.png
 devnotes.txt
 /__pycache__

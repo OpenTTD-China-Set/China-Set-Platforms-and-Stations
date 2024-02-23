@@ -1,6 +1,6 @@
 {
-  "lighting_angle": 60,
-  "lighting_elevation": 65,
+  "lighting_angle": 45,
+  "lighting_elevation": 45,
   "depth_influence": 0,
   "tiled_normals": true,
   "solid_base": true,
@@ -15,9 +15,8 @@
   "detail_boost": 100.0,
   "falloff_adjustment": 0.5,
   "max_colour_push": 2,
-  "fosterise": true,
-  "suppress_edge_fosterisation": false,
-  "fade_to_black": true,
+  "fosterise": false,
+  "fade_to_black": false,
   "size": {
     "x": 128,
     "y": 128,

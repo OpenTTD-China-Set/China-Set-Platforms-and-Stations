@@ -13,27 +13,27 @@ template template_empty() {
 // this template is for alternative sprites
 // the x and y here starts from 0, maximun value for x is 3
 template template_standard_0 (a) {
-    [ 288*0,   0, 256, 312, -129, -186, "gfx/"+a+"_32bpp.png"]
+    [ 288*0,   0, 256, 312, -127, -182, "gfx/"+a+"_32bpp.png"]
 }
 template template_standard_1 (a) {
-    [ 288*1,   0, 256, 312, -124, -185, "gfx/"+a+"_32bpp.png"]
+    [ 288*1,   0, 256, 312, -125, -183, "gfx/"+a+"_32bpp.png"]
 }
 template template_standard_2 (a) {
-    [ 288*2,   0, 256, 312, -207, -225, "gfx/"+a+"_32bpp.png"]
+    [ 288*2,   0, 256, 312, -207, -222, "gfx/"+a+"_32bpp.png"]
 }
 template template_standard_3 (a) {
-    [ 288*3,   0, 256, 312,  -44, -225, "gfx/"+a+"_32bpp.png"]
+    [ 288*3,   0, 256, 312,  -48, -222, "gfx/"+a+"_32bpp.png"]
 }
 // template for buildings
 template template_standard_building(a, x) {
-    [ (288 * x),   0, 256, 312, -129, -186, "gfx/"+a+"_32bpp.png"]
+    [ (288 * x),   0, 256, 312, -127, -182, "gfx/"+a+"_32bpp.png"]
 }
 // template for fences and fenced platforms
 template template_standard_fence_0 (a) {
-    [ 288*0,   0, 256, 312, -129, -186, "gfx/"+a+"_32bpp.png"]
+    [ 288*0,   0, 256, 312, -127, -182, "gfx/"+a+"_32bpp.png"]
 }
 template template_standard_fence_1 (a) {
-    [ 288*1,   0, 256, 312, -124, -185, "gfx/"+a+"_32bpp.png"]
+    [ 288*1,   0, 256, 312, -125, -183, "gfx/"+a+"_32bpp.png"]
 }
 template template_standard_fence_2 (a) {
     [ 288*2,   0, 256, 312, -247, -244, "gfx/"+a+"_32bpp.png"]
@@ -43,14 +43,14 @@ template template_standard_fence_3 (a) {
 }
 // mirrored sprites for unsymmetrical objects
 template template_standard_mirrored_0 (a) {
-    [ 288*6,   0, 256, 312, -129, -186, "gfx/"+a+"_32bpp.png"]
+    [ 288*6,   0, 256, 312, -127, -182, "gfx/"+a+"_32bpp.png"]
 }
 template template_standard_mirrored_1 (a) {
-    [ 288*7,   0, 256, 312, -124, -185, "gfx/"+a+"_32bpp.png"]
+    [ 288*7,   0, 256, 312, -125, -183, "gfx/"+a+"_32bpp.png"]
 }
 template template_standard_mirrored_2 (a) {
-    [ 288*4,   0, 256, 312, -207, -225, "gfx/"+a+"_32bpp.png"]
+    [ 288*4,   0, 256, 312, -207, -222, "gfx/"+a+"_32bpp.png"]
 }
 template template_standard_mirrored_3 (a) {
-    [ 288*5,   0, 256, 312,  -44, -225, "gfx/"+a+"_32bpp.png"]
+    [ 288*5,   0, 256, 312,  -48, -222, "gfx/"+a+"_32bpp.png"]
 }
