@@ -18,22 +18,13 @@ All files that ends with `mirrored` means that they are mirrored model, and the 
 
 A standard voxel model file's name should have these componets:
 ```
-plm_high_brown_something_mirrored.vox
-|   |    |     |         |
-type|    |     |         mirrored mark, necessary for some
-    subtype    |         platform types e.g. plm and bul
-         style |
-               style subtype, could be extended
+plm_high_brown_something.vox
+|   |    |     |
+type|    |     style subtype, could be extended
+    subtype
+         style
 ```
 
 ## Credits
 
-|Filename|Author|Remarks|
-|---|---|---|
-|stn_high_old|WenSim|
-|stn_high_to_low_old|WenSim
-|stn_high_to_stairs|WenSim
-|stn_low_old|WenSim
-|stn_low_to_none_old|WenSim
-|stn_stairs_old|WenSim
-|stn_stairs_to_low_old|WenSim
+Voxel models are created by NACHN, Dongfeng<sub>4</sub>3110 and WenSim
