@@ -22,7 +22,7 @@ template template_standard_2 (a) {
     [ 288*2,   0, 256, 312, -207, -222, "gfx/"+a+"_32bpp.png"]
 }
 template template_standard_3 (a) {
-    [ 288*3,   0, 256, 312,  -48, -222, "gfx/"+a+"_32bpp.png"]
+    [ 288*3,   0, 256, 312,  -46, -222, "gfx/"+a+"_32bpp.png"]
 }
 // template for buildings
 template template_standard_building(a, x) {
@@ -52,5 +52,5 @@ template template_standard_mirrored_2 (a) {
     [ 288*4,   0, 256, 312, -207, -222, "gfx/"+a+"_32bpp.png"]
 }
 template template_standard_mirrored_3 (a) {
-    [ 288*5,   0, 256, 312,  -48, -222, "gfx/"+a+"_32bpp.png"]
+    [ 288*5,   0, 256, 312,  -46, -222, "gfx/"+a+"_32bpp.png"]
 }
