@@ -1,0 +1,58 @@
+spritelayout spritelayout_%name2_%name0_%name1_x{
+    ground {
+        sprite: GROUNDSPRITE_RAIL_X;
+    }
+    building {
+        sprite: spriteset_%name0_x;
+        xoffset: 0;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 16;
+        yextent: 6;
+        zextent: 6;
+    }
+    building {
+        sprite: spriteset_%name1_x;
+        xoffset: 0;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 16;
+        yextent: 1;
+        zextent: 6;
+    }
+}
+
+spritelayout spritelayout_%name2_%name0_%name1_y{
+    ground {
+        sprite: GROUNDSPRITE_RAIL_Y;
+    }
+    building {
+        sprite: spriteset_%name0_y;
+        xoffset: 0;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 6;
+        yextent: 16;
+        zextent: 6;
+    }
+    building {
+        sprite: spriteset_%name1_y;
+        xoffset: 0;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 1;
+        yextent: 16;
+        zextent: 6;
+    }
+}
+
+item(FEAT_STATIONS, stn_%name2_%name0_%name1){
+    property {
+        class:          "CNSF";
+        classname:      string(STR_CLS_CNSF);
+        name:           string(STR_NAME_$name2_$name0_$name1);
+    }
+    graphics {
+        sprite_layouts: [spritelayout_%name2_%name0_%name1_x, spritelayout_%name2_%name0_%name1_y];
+    }
+}
