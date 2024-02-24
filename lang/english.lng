@@ -37,6 +37,7 @@ STR_NAME_PLM_LOW_TO_EXLOW_CONCRETE                       :Low to exlow concrete
 STR_NAME_PLS_HIGH_MODERNNARROW_CURVEDSHED                :High modernnarrow curvedshed
 STR_NAME_PLS_HIGH_MODERNNARROW_OVERPASS                  :High modernnarrow overpass
 STR_NAME_PLS_HIGH_MODERNNARROW_OVERPASS_WIDE             :High modernnarrow overpass wide
+STR_NAME_PLT_CONCRETE_SHED                               :Concrete shed
 STR_NAME_PLT_EXLOW_BROWN                                 :Exlow brown
 STR_NAME_PLT_EXLOW_COBBLE                                :Exlow cobble
 STR_NAME_PLT_HIGH_BROWN                                  :High brown
@@ -55,6 +56,9 @@ STR_NAME_PLT_LOW_SBRICKMIDDLE                            :Low sbrickmiddle
 STR_NAME_PLT_LOW_SBRICK_SIGN                             :Low sbrick sign
 STR_NAME_PLT_LOW_WHITE                                   :Low white
 STR_NAME_PSM_HIGH_MODERNNARROW_OVERPASS_WIDE_SINGLESIDE  :High modernnarrow overpass wide singleside
+STR_NAME_PLT_CONCRETE_SHED_FEN_BLUE                      :Concrete shed  blue
+STR_NAME_PLT_CONCRETE_SHED_FEN_GREEN                     :Concrete shed  green
+STR_NAME_PLT_CONCRETE_SHED_FEN_WHITE                     :Concrete shed  white
 STR_NAME_PLT_EXLOW_BROWN_FEN_BLUE                        :Exlow brown  blue
 STR_NAME_PLT_EXLOW_BROWN_FEN_GREEN                       :Exlow brown  green
 STR_NAME_PLT_EXLOW_BROWN_FEN_WHITE                       :Exlow brown  white
