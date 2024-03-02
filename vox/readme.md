@@ -25,6 +25,13 @@ type|    |     style subtype, could be extended
          style
 ```
 
+## Voxel standards
+
+|Type|height limit|remarks|
+|---|---|---|
+|high platforms|16vx||
+|low platforms|12vx||
+
 ## Credits
 
 Voxel models are created by NACHN, Dongfeng<sub>4</sub>3110 and WenSim
