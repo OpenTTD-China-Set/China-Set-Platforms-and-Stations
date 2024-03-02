@@ -1,4 +1,4 @@
-spritelayout spritelayout_fenced_%name0_%name1_x{
+spritelayout spritelayout_%name2_%name0_%name1_x{
     ground {
         sprite: GROUNDSPRITE_RAIL_X;
     }
@@ -22,7 +22,7 @@ spritelayout spritelayout_fenced_%name0_%name1_x{
     }
 }
 
-spritelayout spritelayout_fenced_%name0_%name1_y{
+spritelayout spritelayout_%name2_%name0_%name1_y{
     ground {
         sprite: GROUNDSPRITE_RAIL_Y;
     }
@@ -46,18 +46,18 @@ spritelayout spritelayout_fenced_%name0_%name1_y{
     }
 }
 
-item(FEAT_STATIONS, stn_fenced_%name0_%name1){
+item(FEAT_STATIONS, stn_%name2_%name0_%name1){
     property {
         class:          "CNSF";
         classname:      string(STR_CLS_CNSF);
-        name:           string(STR_NAME_$name0_$name1);
+        name:           string(STR_NAME_$name2_$name0_$name1);
     }
     graphics {
-        sprite_layouts: [spritelayout_fenced_%name0_%name1_x, spritelayout_fenced_%name0_%name1_y];
+        sprite_layouts: [spritelayout_%name2_%name0_%name1_x, spritelayout_%name2_%name0_%name1_y];
     }
 }
 
-spritelayout spritelayout_fenced_%name0_%name1_alt_x{
+spritelayout spritelayout_%name2_%name0_%name1_alt_x{
     ground {
         sprite: GROUNDSPRITE_RAIL_X;
     }
@@ -81,7 +81,7 @@ spritelayout spritelayout_fenced_%name0_%name1_alt_x{
     }
 }
 
-spritelayout spritelayout_fenced_%name0_%name1_alt_y{
+spritelayout spritelayout_%name2_%name0_%name1_alt_y{
     ground {
         sprite: GROUNDSPRITE_RAIL_Y;
     }
@@ -105,18 +105,18 @@ spritelayout spritelayout_fenced_%name0_%name1_alt_y{
     }
 }
 
-item(FEAT_STATIONS, stn_fenced_%name0_%name1_alt){
+item(FEAT_STATIONS, stn_%name2_%name0_%name1_alt){
     property {
         class:          "CNSF";
         classname:      string(STR_CLS_CNSF);
-        name:           string(STR_NAME_$name0_$name1);
+        name:           string(STR_NAME_$name2_$name0_$name1);
     }
     graphics {
-        sprite_layouts: [spritelayout_fenced_%name0_%name1_alt_x, spritelayout_fenced_%name0_%name1_alt_y];
+        sprite_layouts: [spritelayout_%name2_%name0_%name1_alt_x, spritelayout_%name2_%name0_%name1_alt_y];
     }
 }
 /*
-spritelayout spritelayout_fenced_%name0_%name1_double_x{
+spritelayout spritelayout_%name2_%name0_%name1_double_x{
     ground {
         sprite: GROUNDSPRITE_RAIL_X;
     }
@@ -158,7 +158,7 @@ spritelayout spritelayout_fenced_%name0_%name1_double_x{
     }
 }
 
-spritelayout spritelayout_fenced_%name0_%name1_double_y{
+spritelayout spritelayout_%name2_%name0_%name1_double_y{
     ground {
         sprite: GROUNDSPRITE_RAIL_Y;
     }
@@ -200,14 +200,14 @@ spritelayout spritelayout_fenced_%name0_%name1_double_y{
     }
 }
 
-item(FEAT_STATIONS, stn_fenced_%name0_%name1_double){
+item(FEAT_STATIONS, stn_%name2_%name0_%name1_double){
     property {
         class:          "CNSF";
         classname:      string(STR_CLS_CNSF);
-        name:           string(STR_NAME_$name0_$name1);
+        name:           string(STR_NAME_$name2_$name0_$name1);
     }
     graphics {
-        sprite_layouts: [spritelayout_fenced_%name0_%name1_double_x, spritelayout_fenced_%name0_%name1_double_y];
+        sprite_layouts: [spritelayout_%name2_%name0_%name1_double_x, spritelayout_%name2_%name0_%name1_double_y];
     }
 }
 */

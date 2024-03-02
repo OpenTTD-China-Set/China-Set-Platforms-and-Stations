@@ -149,10 +149,14 @@ def GenerateOtherStations(
             fence_base_name = os.path.basename(fence).split(".")[0]
             file_write_name = f'{target_prefix}_{item_base_name}_{fence_base_name}'
 
-            with open(os.path.join(target_folder, f'{target_prefix}_{file_write_name}.pnml'), 'w+') as file:
-                content = ProcessPnmlFile(os.path.join(template_folder, f'{target_prefix}_{fenced_type}.pnml.template'), [item_base_name, fence_base_name, target_prefix])
-                lng_write_list.append(f'STR_NAME_{file_write_name.upper():<48}:{file_write_name.replace("_","").capitalize()}')
-                menu_write_list.append(f'#include "{os.path.join(target_folder, f"{target_prefix}_{file_write_name}.pnml")}"')
+            file_path = os.path.join(target_folder, f'{file_write_name}.pnml')
+            template_path = os.path.join(template_folder, f'{target_prefix}_{fenced_type}.pnml.template')
+
+            content = ProcessPnmlFile(template_path, [item_base_name, fence_base_name, target_prefix])
+            lng_write_list.append(f'STR_NAME_{file_write_name.upper():<48}:{file_write_name.replace("_"," ").capitalize()}')
+            menu_write_list.append(f'#include "{file_path}"')
+
+            with open(file_path, 'w+') as file:
                 file.write(content)
 
     return lng_write_list, menu_write_list

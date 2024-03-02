@@ -54,3 +54,29 @@ template template_standard_mirrored_2 (a) {
 template template_standard_mirrored_3 (a) {
     [ 288*5,   0, 256, 312,  -47, -222, "gfx/"+a+"_32bpp.png"]
 }
+
+template template_childsprite_0 (a) {
+    [ 288*0,   0, 256, 312,    0,    0, "gfx/"+a+"_32bpp.png"]
+}
+template template_childsprite_1 (a) {
+    [ 288*1,   0, 256, 312,    0,    0, "gfx/"+a+"_32bpp.png"]
+}
+template template_childsprite_2 (a) {
+    [ 288*2,   0, 256, 312,    0,    0, "gfx/"+a+"_32bpp.png"]
+}
+template template_childsprite_3 (a) {
+    [ 288*3,   0, 256, 312,    0,    0, "gfx/"+a+"_32bpp.png"]
+}
+
+template template_childsprite_mirrored_0 (a) {
+    [ 288*6,   0, 256, 312,    0,    0, "gfx/"+a+"_32bpp.png"]
+}
+template template_childsprite_mirrored_1 (a) {
+    [ 288*7,   0, 256, 312,    0,    0, "gfx/"+a+"_32bpp.png"]
+}
+template template_childsprite_mirrored_2 (a) {
+    [ 288*4,   0, 256, 312,    0,    0, "gfx/"+a+"_32bpp.png"]
+}
+template template_childsprite_mirrored_3 (a) {
+    [ 288*5,   0, 256, 312,    0,    0, "gfx/"+a+"_32bpp.png"]
+}
