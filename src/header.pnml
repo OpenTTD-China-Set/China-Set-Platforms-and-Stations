@@ -9,3 +9,9 @@ grf {
 /* ChinaSet: Stations and Platforms is a free game extension for OpenTTD
 distrubuted under the GPL v2.0 license. It is a collection of stations and platforms
 based on the Chinese railway system. */
+
+// version check
+if (ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(14,0)) {
+    error(FATAL, string(STR_OPENTTD));
+    exit;
+}

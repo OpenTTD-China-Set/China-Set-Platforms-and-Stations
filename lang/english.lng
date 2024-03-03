@@ -1,7 +1,9 @@
 ##grflangid 0x01
 
-STR_GRF_NAME    :CNS: Platforms and Stations {VERSION}
-STR_GRF_DESC    :ChinaSet: Platforms and Stations {VERSION}
+STR_OPENTTD     :CNSPS requires OpenTTD 14.0 or later. Please check your game installation.
+
+STR_GRF_NAME    :CNS: Platforms and Stations {WHITE}{VERSION}
+STR_GRF_DESC    :{GOLD}China{RED}Set{BLACK}: Platforms and Stations {WHITE}{VERSION}{}{}{BLACK}Created by WenSim and the ChinaSet team.{}{}{WHITE}Graphics contributors:{BLACK}{}WenSim, NACHN, Dongfeng 4 3110.{}{WHITE}Coding contributors:{BLACK}{}WenSim{}{}Licensed under GPLv2 {GOLD}{TRAIN}{TRAIN}{TRAIN}{}{}{BLACK}Special thanks to Ahyangyi for helping us fix the graphics problem.
 STR_GRF_URL     :{URL}
 
 STR_CLS_CNPC    :CNSPS: Credits
@@ -30,47 +32,29 @@ STR_NAME_PLM_HIGH_MODERNNARROW_SHED                      :High modernnarrow shed
 STR_NAME_PLM_HIGH_MODERNNARROW_STAIRS                    :High modernnarrow stairs
 STR_NAME_PLM_HIGH_MODERNNARROW_TUNNEL                    :High modernnarrow tunnel
 STR_NAME_PLM_HIGH_TO_LOW_BROWN                           :High to low brown
-STR_NAME_PLM_HIGH_TO_NONE_BROWN                          :High to none brown
 STR_NAME_PLM_LOW_BROWN_END                               :Low brown end
-STR_NAME_PLM_LOW_TO_EXLOW_BROWN                          :Low to exlow brown
 STR_NAME_PLM_LOW_TO_EXLOW_CONCRETE                       :Low to exlow concrete
 STR_NAME_PLS_HIGH_MODERNNARROW_CURVEDSHED                :High modernnarrow curvedshed
 STR_NAME_PLS_HIGH_MODERNNARROW_OVERPASS                  :High modernnarrow overpass
 STR_NAME_PLS_HIGH_MODERNNARROW_OVERPASS_WIDE             :High modernnarrow overpass wide
-STR_NAME_PLT_CONCRETE_SHED                               :Concrete shed
 STR_NAME_PLT_EXLOW_BROWN                                 :Exlow brown
-STR_NAME_PLT_EXLOW_COBBLE                                :Exlow cobble
 STR_NAME_PLT_HIGH_BROWN                                  :High brown
-STR_NAME_PLT_HIGH_MODERN                                 :High modern
 STR_NAME_PLT_HIGH_MODERNNARROW                           :High modernnarrow
 STR_NAME_PLT_HIGH_MODERNNARROW_NOOVERPASS                :High modernnarrow nooverpass
 STR_NAME_PLT_HIGH_MODERNNARROW_SHED                      :High modernnarrow shed
-STR_NAME_PLT_HIGH_MODERNNARROW_XIAOCHI                   :High modernnarrow xiaochi
 STR_NAME_PLT_LOW_BROWN                                   :Low brown
-STR_NAME_PLT_LOW_COBBLE                                  :Low cobble
 STR_NAME_PLT_LOW_CONCRETE                                :Low concrete
-STR_NAME_PLT_LOW_CONCRETE_ARTISANSHED                    :Low concrete artisanshed
-STR_NAME_PLT_LOW_CONCRETE_SIGN                           :Low concrete sign
+STR_NAME_PLT_LOW_MODERNNARROW                            :Low modernnarrow
 STR_NAME_PLT_LOW_SBRICK                                  :Low sbrick
 STR_NAME_PLT_LOW_SBRICKMIDDLE                            :Low sbrickmiddle
-STR_NAME_PLT_LOW_SBRICK_SIGN                             :Low sbrick sign
 STR_NAME_PLT_LOW_WHITE                                   :Low white
 STR_NAME_PSM_HIGH_MODERNNARROW_OVERPASS_WIDE_SINGLESIDE  :High modernnarrow overpass wide singleside
-STR_NAME_PLT_CONCRETE_SHED_FEN_BLUE                      :Concrete shed  blue
-STR_NAME_PLT_CONCRETE_SHED_FEN_GREEN                     :Concrete shed  green
-STR_NAME_PLT_CONCRETE_SHED_FEN_WHITE                     :Concrete shed  white
 STR_NAME_PLT_EXLOW_BROWN_FEN_BLUE                        :Exlow brown  blue
 STR_NAME_PLT_EXLOW_BROWN_FEN_GREEN                       :Exlow brown  green
 STR_NAME_PLT_EXLOW_BROWN_FEN_WHITE                       :Exlow brown  white
-STR_NAME_PLT_EXLOW_COBBLE_FEN_BLUE                       :Exlow cobble  blue
-STR_NAME_PLT_EXLOW_COBBLE_FEN_GREEN                      :Exlow cobble  green
-STR_NAME_PLT_EXLOW_COBBLE_FEN_WHITE                      :Exlow cobble  white
 STR_NAME_PLT_HIGH_BROWN_FEN_BLUE                         :High brown  blue
 STR_NAME_PLT_HIGH_BROWN_FEN_GREEN                        :High brown  green
 STR_NAME_PLT_HIGH_BROWN_FEN_WHITE                        :High brown  white
-STR_NAME_PLT_HIGH_MODERN_FEN_BLUE                        :High modern  blue
-STR_NAME_PLT_HIGH_MODERN_FEN_GREEN                       :High modern  green
-STR_NAME_PLT_HIGH_MODERN_FEN_WHITE                       :High modern  white
 STR_NAME_PLT_HIGH_MODERNNARROW_FEN_BLUE                  :High modernnarrow  blue
 STR_NAME_PLT_HIGH_MODERNNARROW_FEN_GREEN                 :High modernnarrow  green
 STR_NAME_PLT_HIGH_MODERNNARROW_FEN_WHITE                 :High modernnarrow  white
@@ -80,33 +64,21 @@ STR_NAME_PLT_HIGH_MODERNNARROW_NOOVERPASS_FEN_WHITE      :High modernnarrow noov
 STR_NAME_PLT_HIGH_MODERNNARROW_SHED_FEN_BLUE             :High modernnarrow shed  blue
 STR_NAME_PLT_HIGH_MODERNNARROW_SHED_FEN_GREEN            :High modernnarrow shed  green
 STR_NAME_PLT_HIGH_MODERNNARROW_SHED_FEN_WHITE            :High modernnarrow shed  white
-STR_NAME_PLT_HIGH_MODERNNARROW_XIAOCHI_FEN_BLUE          :High modernnarrow xiaochi  blue
-STR_NAME_PLT_HIGH_MODERNNARROW_XIAOCHI_FEN_GREEN         :High modernnarrow xiaochi  green
-STR_NAME_PLT_HIGH_MODERNNARROW_XIAOCHI_FEN_WHITE         :High modernnarrow xiaochi  white
 STR_NAME_PLT_LOW_BROWN_FEN_BLUE                          :Low brown  blue
 STR_NAME_PLT_LOW_BROWN_FEN_GREEN                         :Low brown  green
 STR_NAME_PLT_LOW_BROWN_FEN_WHITE                         :Low brown  white
-STR_NAME_PLT_LOW_COBBLE_FEN_BLUE                         :Low cobble  blue
-STR_NAME_PLT_LOW_COBBLE_FEN_GREEN                        :Low cobble  green
-STR_NAME_PLT_LOW_COBBLE_FEN_WHITE                        :Low cobble  white
 STR_NAME_PLT_LOW_CONCRETE_FEN_BLUE                       :Low concrete  blue
 STR_NAME_PLT_LOW_CONCRETE_FEN_GREEN                      :Low concrete  green
 STR_NAME_PLT_LOW_CONCRETE_FEN_WHITE                      :Low concrete  white
-STR_NAME_PLT_LOW_CONCRETE_ARTISANSHED_FEN_BLUE           :Low concrete artisanshed  blue
-STR_NAME_PLT_LOW_CONCRETE_ARTISANSHED_FEN_GREEN          :Low concrete artisanshed  green
-STR_NAME_PLT_LOW_CONCRETE_ARTISANSHED_FEN_WHITE          :Low concrete artisanshed  white
-STR_NAME_PLT_LOW_CONCRETE_SIGN_FEN_BLUE                  :Low concrete sign  blue
-STR_NAME_PLT_LOW_CONCRETE_SIGN_FEN_GREEN                 :Low concrete sign  green
-STR_NAME_PLT_LOW_CONCRETE_SIGN_FEN_WHITE                 :Low concrete sign  white
+STR_NAME_PLT_LOW_MODERNNARROW_FEN_BLUE                   :Low modernnarrow  blue
+STR_NAME_PLT_LOW_MODERNNARROW_FEN_GREEN                  :Low modernnarrow  green
+STR_NAME_PLT_LOW_MODERNNARROW_FEN_WHITE                  :Low modernnarrow  white
 STR_NAME_PLT_LOW_SBRICK_FEN_BLUE                         :Low sbrick  blue
 STR_NAME_PLT_LOW_SBRICK_FEN_GREEN                        :Low sbrick  green
 STR_NAME_PLT_LOW_SBRICK_FEN_WHITE                        :Low sbrick  white
 STR_NAME_PLT_LOW_SBRICKMIDDLE_FEN_BLUE                   :Low sbrickmiddle  blue
 STR_NAME_PLT_LOW_SBRICKMIDDLE_FEN_GREEN                  :Low sbrickmiddle  green
 STR_NAME_PLT_LOW_SBRICKMIDDLE_FEN_WHITE                  :Low sbrickmiddle  white
-STR_NAME_PLT_LOW_SBRICK_SIGN_FEN_BLUE                    :Low sbrick sign  blue
-STR_NAME_PLT_LOW_SBRICK_SIGN_FEN_GREEN                   :Low sbrick sign  green
-STR_NAME_PLT_LOW_SBRICK_SIGN_FEN_WHITE                   :Low sbrick sign  white
 STR_NAME_PLT_LOW_WHITE_FEN_BLUE                          :Low white  blue
 STR_NAME_PLT_LOW_WHITE_FEN_GREEN                         :Low white  green
 STR_NAME_PLT_LOW_WHITE_FEN_WHITE                         :Low white  white
