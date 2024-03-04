@@ -226,7 +226,7 @@ def main():
 
     menu_write_list.append(ReadFile('cnspsend.pnml.template', 'string'))
 
-    for item in tqdm(['plt'], desc='Writing fenced stations', unit='file', ncols = ncols_size):
+    for item in tqdm(['pl1'], desc='Writing fenced stations', unit='file', ncols = ncols_size):
         lng_write_list_func, menu_write_list_func = GenerateFencedStations(item)
         lng_write_list.extend(lng_write_list_func)
         menu_write_list.extend(menu_write_list_func)

@@ -8,12 +8,11 @@ All files that ends with `mirrored` means that they are mirrored model, and the 
 
 |Prefix|Meaning|
 |---|---|
-|plt|station **pl**a**t**form|
-|plm|station **pl**atform **m**irrored|
-|pls|station **pl**atform **s**ingle sided|
-|psm|station **p**latform **s**ingle sided **m**irrored|
+|pl1|**pl**atform **1** (symmetric)|
+|pl2|**pl**atform **2** (asymmetric)|
+|pl3|**pl**atform **3** (symmetric, no double sided version)|
+|pl4|**pl**atform **4** (asymmetric, no double sided version)|
 |bul|station **bu**i**l**ding|
-|bum|station **bu**ilding **m**irrored|
 |ful|**ful**l platform|
 |wa1|**wa**ypoint **1** (symmetric)|
 |wa2|**wa**ypoint **2** (asymmetric)|
