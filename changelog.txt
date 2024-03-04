@@ -1,0 +1,17 @@
+CNSPS Changelog
+===================
+https://www.github.com/wensimehrp/china-set-platforms-and-stations
+
+[2024-03-03] 0.1.1a
+Add: Waypoint support
+Add: Transitional pieces for modernnarrow
+Add: Station for overpass platforms
+Fix: Some platform's graphics are blury
+Remove: Unnecessary platform pieces
+
+Contributors: WenSim
+
+[2024-03-02] 0.1a
+Initial verison of CNSPS
+
+Contributors: WenSim, NACHN, Dongfeng 4 3110
