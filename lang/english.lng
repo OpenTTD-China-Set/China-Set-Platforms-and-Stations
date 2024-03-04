@@ -28,9 +28,11 @@ STR_NAME_FEN_BLUE                                        :Blue
 STR_NAME_FEN_GREEN                                       :Green
 STR_NAME_FEN_WHITE                                       :White
 STR_NAME_FUL_LOW_CONCRETE                                :Low concrete
+STR_NAME_PLM_HIGH_MODERNNARROW_END                       :High modernnarrow end
 STR_NAME_PLM_HIGH_MODERNNARROW_STAIRS                    :High modernnarrow stairs
 STR_NAME_PLM_HIGH_MODERNNARROW_TUNNEL                    :High modernnarrow tunnel
 STR_NAME_PLM_HIGH_TO_LOW_BROWN                           :High to low brown
+STR_NAME_PLM_HIGH_TO_NONE_MODERNNARROW                   :High to none modernnarrow
 STR_NAME_PLM_LOW_BROWN_END                               :Low brown end
 STR_NAME_PLM_LOW_TO_EXLOW_CONCRETE                       :Low to exlow concrete
 STR_NAME_PLS_HIGH_MODERNNARROW_CURVEDSHED                :High modernnarrow curvedshed
