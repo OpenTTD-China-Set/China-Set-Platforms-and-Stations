@@ -10,7 +10,7 @@
   "accuracy": 10,
   "overlap": 0.02,
   "brightness": -0.025,
-  "contrast": 0.025,
+  "contrast": 0.1,
   "pad_to_full_length": false,
   "detail_boost": 100.0,
   "falloff_adjustment": 0.5,

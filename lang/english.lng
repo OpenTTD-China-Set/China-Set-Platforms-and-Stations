@@ -16,6 +16,7 @@ STR_STN_AUTO_LOW_BROWN          :AutoStation Low Brown
 
 STR_NAME_BUL_HIGH_WHITE_1                                :High white 1
 STR_NAME_BUL_HIGH_WHITE_2                                :High white 2
+STR_NAME_BUL_OVERPASS_STATION                            :Overpass station
 STR_NAME_BUL_YELLOW_1                                    :Yellow 1
 STR_NAME_BUL_YELLOW_2                                    :Yellow 2
 STR_NAME_BUL_YELLOW_SMALLEXIT                            :Yellow smallexit
@@ -27,8 +28,6 @@ STR_NAME_FEN_BLUE                                        :Blue
 STR_NAME_FEN_GREEN                                       :Green
 STR_NAME_FEN_WHITE                                       :White
 STR_NAME_FUL_LOW_CONCRETE                                :Low concrete
-STR_NAME_PLM_HIGH_MODERNNARROW_NOOVERPASS_STAIRS         :High modernnarrow nooverpass stairs
-STR_NAME_PLM_HIGH_MODERNNARROW_SHED                      :High modernnarrow shed
 STR_NAME_PLM_HIGH_MODERNNARROW_STAIRS                    :High modernnarrow stairs
 STR_NAME_PLM_HIGH_MODERNNARROW_TUNNEL                    :High modernnarrow tunnel
 STR_NAME_PLM_HIGH_TO_LOW_BROWN                           :High to low brown
@@ -49,6 +48,8 @@ STR_NAME_PLT_LOW_SBRICK                                  :Low sbrick
 STR_NAME_PLT_LOW_SBRICKMIDDLE                            :Low sbrickmiddle
 STR_NAME_PLT_LOW_WHITE                                   :Low white
 STR_NAME_PSM_HIGH_MODERNNARROW_OVERPASS_WIDE_SINGLESIDE  :High modernnarrow overpass wide singleside
+STR_NAME_WA1_OVERPASS_1                                  :Overpass 1
+STR_NAME_WA3_OVERPASS_1                                  :Overpass 1
 STR_NAME_PLT_EXLOW_BROWN_FEN_BLUE                        :Exlow brown  blue
 STR_NAME_PLT_EXLOW_BROWN_FEN_GREEN                       :Exlow brown  green
 STR_NAME_PLT_EXLOW_BROWN_FEN_WHITE                       :Exlow brown  white

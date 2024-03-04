@@ -15,6 +15,9 @@ All files that ends with `mirrored` means that they are mirrored model, and the 
 |bul|station **bu**i**l**ding|
 |bum|station **bu**ilding **m**irrored|
 |ful|**ful**l platform|
+|wa1|**wa**ypoint **1** (symmetric)|
+|wa2|**wa**ypoint **2** (asymmetric)|
+|wa3|**wa**ypoint **3** (symmetric double sided)|
 
 A standard voxel model file's name should have these componets:
 ```
