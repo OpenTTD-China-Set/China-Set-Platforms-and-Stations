@@ -1,6 +1,7 @@
 @echo off
 :start
 py generate_code_and_sprite.py
+py get_date.py
 py nml_patcher.py -f "cnsps.pnml" -o "cnsps.nml" -b 1 -v 1
 nmlc cnsps.nml -o cnsplatform.grf
 
