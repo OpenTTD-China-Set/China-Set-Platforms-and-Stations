@@ -9,6 +9,7 @@ devnotes.txt
 gfx/*32bpp.png
 env
 generated/*.pnml
+sprites
 
 cnsps.pnml
 cnsps.nml

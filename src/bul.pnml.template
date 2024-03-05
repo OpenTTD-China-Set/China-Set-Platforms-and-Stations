@@ -39,7 +39,7 @@ spriteset (spriteset_%name_y) {
     template_empty()
 }
 alternative_sprites (spriteset_%name_y, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_building("%name", 1)
+    template_standard_building("%name", 7)
 }
 
 item (FEAT_STATIONS, stn_%name) {
@@ -94,7 +94,7 @@ spriteset (spriteset_%name_y_alt) {
     template_empty()
 }
 alternative_sprites (spriteset_%name_y_alt, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_building("%name", 3)
+    template_standard_building("%name", 5)
 }
 
 item (FEAT_STATIONS, stn_%name_alt) {

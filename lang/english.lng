@@ -14,9 +14,11 @@ STR_CLS_CNSA    :CNSPS: AutoStations(TM)
 STR_STN_AUTO_LOW_BROWN          :AutoStation Low Brown
 # finish utilities
 
+STR_NAME_BU2_OVERPASS_STATION_STAIRS                     :Overpass station stairs
 STR_NAME_BUL_HIGH_WHITE_1                                :High white 1
 STR_NAME_BUL_HIGH_WHITE_2                                :High white 2
 STR_NAME_BUL_OVERPASS_STATION                            :Overpass station
+STR_NAME_BUL_OVERPASS_STATION_LOW                        :Overpass station low
 STR_NAME_BUL_YELLOW_1                                    :Yellow 1
 STR_NAME_BUL_YELLOW_2                                    :Yellow 2
 STR_NAME_BUL_YELLOW_SMALLEXIT                            :Yellow smallexit

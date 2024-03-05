@@ -13,6 +13,7 @@ All files that ends with `mirrored` means that they are mirrored model, and the 
 |pl3|**pl**atform **3** (symmetric, no double sided version)|
 |pl4|**pl**atform **4** (asymmetric, no double sided version)|
 |bul|station **bu**i**l**ding|
+|bu2|**bu**ilding **2** (asymmetric)|
 |ful|**ful**l platform|
 |wa1|**wa**ypoint **1** (symmetric)|
 |wa2|**wa**ypoint **2** (asymmetric)|
