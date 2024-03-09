@@ -1,6 +1,6 @@
 ##grflangid 0x56
 
-STR_OPENTTD     :CNSPS 需要 OpenTTD 14.0 或更新版本。请更新你的 OpenTTD 到最新版本。
+STR_OPENTTD     :CNSPS 需要 OpenTTD 12.0 或更新版本。请更新你的 OpenTTD 到最新版本。
 
 STR_GRF_NAME    :中国包：站台与车站 {WHITE}{VERSION}
 STR_GRF_DESC    :{GOLD}中国{RED}包{BLACK}：站台与车站{WHITE} {VERSION}{}{BLACK}由 WenSim 与中国包团队制作。{}{}{WHITE}图形绘制者：{BLACK}{}WenSim、NACHN、东风 4 3110。{}{WHITE}程序编制者：{BLACK}{}WenSim{}特别感谢 Ahyangyi 帮助我们修复图形问题。{}{}{WHITE}{DATE}{}在 GPLv2 许可证下分发 {GOLD}{TRAIN}{TRAIN}{TRAIN}{}{}{BLACK}{}{BIGFONT}{GOLD}我们没有盈利{}这个站台包是免费的

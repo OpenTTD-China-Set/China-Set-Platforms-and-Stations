@@ -1,6 +1,6 @@
 ##grflangid 0x01
 
-STR_OPENTTD     :CNSPS requires OpenTTD 14.0 or later. Please check your game installation.
+STR_OPENTTD     :CNSPS requires OpenTTD 12.0 or later. Please check your game installation.
 
 STR_GRF_NAME    :CNS: Platforms and Stations {WHITE}{VERSION}
 STR_GRF_DESC    :{GOLD}China{RED}Set{BLACK}: Platforms and Stations {WHITE}{VERSION}{}{}{BLACK}Created by WenSim and the ChinaSet team.{}{}{WHITE}Graphics contributors:{BLACK}{}WenSim, NACHN, Dongfeng 4 3110.{}{WHITE}Coding contributors:{BLACK}{}WenSim{}Special thanks to Ahyangyi for helping us fix the graphics problem.{}{}{WHITE}{DATE}{}Licensed under GPLv2 {GOLD}{TRAIN}{TRAIN}{TRAIN}
