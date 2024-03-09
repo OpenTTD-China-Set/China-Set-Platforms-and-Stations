@@ -1,3 +1,7 @@
+spriteset (spriteset_%name_x, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_standard_0("%name")}
+spriteset (spriteset_%name_y, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_standard_1("%name")}
+spriteset (spriteset_%name_alt_x, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_standard_2("%name")}
+spriteset (spriteset_%name_alt_y, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_standard_3("%name")}
 // single sided 1
 spritelayout spritelayout_%name_x {
     ground {
@@ -27,19 +31,6 @@ spritelayout spritelayout_%name_y {
         yextent: 16;
         zextent: 6;
     }
-}
-
-spriteset (spriteset_%name_x) {
-    template_empty()
-}
-alternative_sprites (spriteset_%name_x, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_0("%name")
-}
-spriteset (spriteset_%name_y) {
-    template_empty()
-}
-alternative_sprites (spriteset_%name_y, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_1("%name")
 }
 
 item (FEAT_STATIONS, stn_%name) {
@@ -83,19 +74,6 @@ spritelayout spritelayout_%name_alt_y {
         yextent: 16;
         zextent: 6;
     }
-}
-
-spriteset (spriteset_%name_alt_x) {
-    template_empty()
-}
-alternative_sprites (spriteset_%name_alt_x, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_2("%name")
-}
-spriteset (spriteset_%name_alt_y) {
-    template_empty()
-}
-alternative_sprites (spriteset_%name_alt_y, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_3("%name")
 }
 
 item (FEAT_STATIONS, stn_%name_alt) {

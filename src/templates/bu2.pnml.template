@@ -1,10 +1,18 @@
+spriteset (spriteset_%name_x_0, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_building("%name", 0)}
+spriteset (spriteset_%name_y_0, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_building("%name", 7)}
+spriteset (spriteset_%name_x_1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_building("%name", 6)}
+spriteset (spriteset_%name_y_1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_building("%name", 1)}
+spriteset (spriteset_%name_x_2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_building("%name", 2)}
+spriteset (spriteset_%name_y_2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_building("%name", 5)}
+spriteset (spriteset_%name_x_3, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_building("%name", 4)}
+spriteset (spriteset_%name_y_3, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_building("%name", 3)}
 // single sided 1
-spritelayout spritelayout_%name_x {
+spritelayout spritelayout_%name_x_0 {
     ground {
         sprite: GROUNDSPRITE_NORMAL;
     }
     building {
-        sprite: spriteset_%name_x;
+        sprite: spriteset_%name_x_0;
         xoffset: 0;
         yoffset: 0;
         zoffset: 0;
@@ -14,12 +22,12 @@ spritelayout spritelayout_%name_x {
     }
 }
 
-spritelayout spritelayout_%name_y {
+spritelayout spritelayout_%name_y_0 {
     ground {
         sprite: GROUNDSPRITE_NORMAL;
     }
     building {
-        sprite: spriteset_%name_y;
+        sprite: spriteset_%name_y_0;
         xoffset: 0;
         yoffset: 0;
         zoffset: 0;
@@ -27,19 +35,6 @@ spritelayout spritelayout_%name_y {
         yextent: 16;
         zextent: 6;
     }
-}
-
-spriteset (spriteset_%name_x) {
-    template_empty()
-}
-alternative_sprites (spriteset_%name_x, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_building("%name", 0)
-}
-spriteset (spriteset_%name_y) {
-    template_empty()
-}
-alternative_sprites (spriteset_%name_y, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_building("%name", 7)
 }
 
 item (FEAT_STATIONS, stn_%name) {
@@ -49,17 +44,17 @@ item (FEAT_STATIONS, stn_%name) {
         name:           string(STR_NAME_$name);
     }
     graphics {
-        sprite_layouts: [spritelayout_%name_x, spritelayout_%name_y];
-        spriteset_%name_x;
+        sprite_layouts: [spritelayout_%name_x_0, spritelayout_%name_y_0];
+        spriteset_%name_x_0;
     }
 }
 
-spritelayout spritelayout_%name_x_alt {
+spritelayout spritelayout_%name_x_1 {
     ground {
         sprite: GROUNDSPRITE_NORMAL;
     }
     building {
-        sprite: spriteset_%name_x_alt;
+        sprite: spriteset_%name_x_1;
         xoffset: 0;
         yoffset: 0;
         zoffset: 0;
@@ -69,12 +64,12 @@ spritelayout spritelayout_%name_x_alt {
     }
 }
 
-spritelayout spritelayout_%name_y_alt {
+spritelayout spritelayout_%name_y_1 {
     ground {
         sprite: GROUNDSPRITE_NORMAL;
     }
     building {
-        sprite: spriteset_%name_y_alt;
+        sprite: spriteset_%name_y_1;
         xoffset: 0;
         yoffset: 0;
         zoffset: 0;
@@ -82,19 +77,6 @@ spritelayout spritelayout_%name_y_alt {
         yextent: 16;
         zextent: 6;
     }
-}
-
-spriteset (spriteset_%name_x_alt) {
-    template_empty()
-}
-alternative_sprites (spriteset_%name_x_alt, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_building("%name", 6)
-}
-spriteset (spriteset_%name_y_alt) {
-    template_empty()
-}
-alternative_sprites (spriteset_%name_y_alt, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_building("%name", 1)
 }
 
 item (FEAT_STATIONS, stn_%name_alt) {
@@ -104,8 +86,50 @@ item (FEAT_STATIONS, stn_%name_alt) {
         name:           string(STR_NAME_$name);
     }
     graphics {
-        sprite_layouts: [spritelayout_%name_x_alt, spritelayout_%name_y_alt];
-        spriteset_%name_x_alt;
+        sprite_layouts: [spritelayout_%name_x_1, spritelayout_%name_y_1];
+        spriteset_%name_x_1;
+    }
+}
+
+spritelayout spritelayout_%name_x_2 {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+    }
+    building {
+        sprite: spriteset_%name_x_2;
+        xoffset: 0;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 6;
+    }
+}
+
+spritelayout spritelayout_%name_y_2 {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+    }
+    building {
+        sprite: spriteset_%name_y_2;
+        xoffset: 0;
+        yoffset: 0;
+        zoffset: 0;
+        xextent: 16;
+        yextent: 16;
+        zextent: 6;
+    }
+}
+
+item (FEAT_STATIONS, stn_%name_3) {
+    property {
+        class:          "CNS1";
+        classname:      string(STR_CLS_CNP);
+        name:           string(STR_NAME_$name);
+    }
+    graphics {
+        sprite_layouts: [spritelayout_%name_x_2, spritelayout_%name_y_2];
+        spriteset_%name_x_2;
     }
 }
 
@@ -139,20 +163,7 @@ spritelayout spritelayout_%name_y_3 {
     }
 }
 
-spriteset (spriteset_%name_x_3) {
-    template_empty()
-}
-alternative_sprites (spriteset_%name_x_3, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_building("%name", 2)
-}
-spriteset (spriteset_%name_y_3) {
-    template_empty()
-}
-alternative_sprites (spriteset_%name_y_3, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_building("%name", 5)
-}
-
-item (FEAT_STATIONS, stn_%name_3) {
+item (FEAT_STATIONS, stn_%name_4) {
     property {
         class:          "CNS1";
         classname:      string(STR_CLS_CNP);
@@ -161,60 +172,5 @@ item (FEAT_STATIONS, stn_%name_3) {
     graphics {
         sprite_layouts: [spritelayout_%name_x_3, spritelayout_%name_y_3];
         spriteset_%name_x_3;
-    }
-}
-
-spritelayout spritelayout_%name_x_4 {
-    ground {
-        sprite: GROUNDSPRITE_NORMAL;
-    }
-    building {
-        sprite: spriteset_%name_x_4;
-        xoffset: 0;
-        yoffset: 0;
-        zoffset: 0;
-        xextent: 16;
-        yextent: 16;
-        zextent: 6;
-    }
-}
-
-spritelayout spritelayout_%name_y_4 {
-    ground {
-        sprite: GROUNDSPRITE_NORMAL;
-    }
-    building {
-        sprite: spriteset_%name_y_4;
-        xoffset: 0;
-        yoffset: 0;
-        zoffset: 0;
-        xextent: 16;
-        yextent: 16;
-        zextent: 6;
-    }
-}
-
-spriteset (spriteset_%name_x_4) {
-    template_empty()
-}
-alternative_sprites (spriteset_%name_x_4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_building("%name", 4)
-}
-spriteset (spriteset_%name_y_4) {
-    template_empty()
-}
-alternative_sprites (spriteset_%name_y_4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
-    template_standard_building("%name", 3)
-}
-
-item (FEAT_STATIONS, stn_%name_4) {
-    property {
-        class:          "CNS1";
-        classname:      string(STR_CLS_CNP);
-        name:           string(STR_NAME_$name);
-    }
-    graphics {
-        sprite_layouts: [spritelayout_%name_x_4, spritelayout_%name_y_4];
-        spriteset_%name_x_4;
     }
 }
