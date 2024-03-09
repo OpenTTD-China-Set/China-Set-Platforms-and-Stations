@@ -2,6 +2,13 @@ CNSPS Changelog
 ===================
 https://www.github.com/wensimehrp/china-set-platforms-and-stations
 
+[2024-03-08] 0.1.2a
+Add: Several waypoints
+Add: full pieces for modernnarrow
+Fix: version number problem
+
+Contributors: WenSim
+
 [2024-03-03] 0.1.1a
 Add: Waypoint support
 Add: Transitional pieces for modernnarrow
