@@ -15,7 +15,7 @@ with open("custom_tags.txt", "r") as f:
 # replace "%date" with current_date_str in the content
 for index,item in enumerate(content):
     if "DATE" in item:
-        content[index] = f"DATE    :{current_date_str}\n"
+        content[index] = 'DATE    :' + current_date_str + "\n"
 
 # write the new content back to the file
 with open("custom_tags.txt", "w") as f:

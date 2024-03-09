@@ -29,6 +29,12 @@ STR_NAME_BUL_YELLOW_WAITINGROOM_EXTENDED2                :Yellow waitingroom ext
 STR_NAME_FEN_BLUE                                        :Blue
 STR_NAME_FEN_GREEN                                       :Green
 STR_NAME_FEN_WHITE                                       :White
+STR_NAME_FU2_HIGH_MODERN_STAIRS                          :High modern stairs
+STR_NAME_FU2_HIGH_MODERN_STAIRS_CORNER                   :High modern stairs corner
+STR_NAME_FU2_HIGH_MODERN_STAIRS_SHED                     :High modern stairs shed
+STR_NAME_FUL_HIGH_MODERN                                 :High modern
+STR_NAME_FUL_HIGH_MODERN_SHED_1                          :High modern shed 1
+STR_NAME_FUL_HIGH_MODERN_SHED_2                          :High modern shed 2
 STR_NAME_FUL_LOW_CONCRETE                                :Low concrete
 STR_NAME_PL1_EXLOW_BROWN                                 :Exlow brown
 STR_NAME_PL1_HIGH_BROWN                                  :High brown
@@ -53,7 +59,10 @@ STR_NAME_PL3_HIGH_MODERNNARROW_OVERPASS                  :High modernnarrow over
 STR_NAME_PL3_HIGH_MODERNNARROW_OVERPASS_WIDE             :High modernnarrow overpass wide
 STR_NAME_PL4_HIGH_MODERNNARROW_OVERPASS_WIDE_SINGLESIDE  :High modernnarrow overpass wide singleside
 STR_NAME_WA1_OVERPASS_1                                  :Overpass 1
+STR_NAME_WA1_OVERPASS_2                                  :Overpass 2
+STR_NAME_WA1_OVERPASS_3                                  :Overpass 3
 STR_NAME_WA3_OVERPASS_1                                  :Overpass 1
+STR_NAME_WA3_OVERPASS_2                                  :Overpass 2
 STR_NAME_PL1_EXLOW_BROWN_FEN_BLUE                        :Exlow brown  blue
 STR_NAME_PL1_EXLOW_BROWN_FEN_GREEN                       :Exlow brown  green
 STR_NAME_PL1_EXLOW_BROWN_FEN_WHITE                       :Exlow brown  white

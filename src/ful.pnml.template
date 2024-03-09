@@ -42,7 +42,7 @@ alternative_sprites (spriteset_%name_y, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {
     template_standard_1("%name")
 }
 
-item (FEAT_STATIONS, stn_%name) {
+item (FEAT_STATIONS, ful_%name) {
     property {
         class:          "CNS1";
         classname:      string(STR_CLS_CNP);
