@@ -2,6 +2,11 @@ CNSPS Changelog
 ===================
 https://www.github.com/wensimehrp/china-set-platforms-and-stations
 
+[2024-03-08] 0.1.3a
+Change: version check now checks for OpenTTD 12.0
+
+Contributors: WenSim
+
 [2024-03-08] 0.1.2a
 Add: Several waypoints
 Add: full pieces for modernnarrow
