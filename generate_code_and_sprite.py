@@ -130,7 +130,7 @@ def ReadFile(path, type = 'list'):
     return content if type == 'string' else content.splitlines()
 
 
-def GenerateFencedStations(fenced_type: str, template_folder: str = 'src', input_folder: str = 'generated', target_folder: str = 'generated') -> tuple[list[str], list[str]]:
+def GenerateFencedStations(fenced_type: str, template_folder: str = 'src/templates', input_folder: str = 'generated', target_folder: str = 'generated') -> tuple[list[str], list[str]]:
     '''
     receives: fenced_type string, template_folder string, input_folder string, target_folder string
     returns: None, generates fenced stations from the given template folder and input folder and writes them to the target folder
@@ -220,7 +220,7 @@ def main():
         # if file_original_name.split('_')[-1] == 'mirrored':
         #     continue
         WriteFile(f"generated/{file_original_name}.pnml",
-                  ProcessPnmlFile(f'src/{file_original_name.split("_")[0]}.pnml.template', file_original_name))
+                  ProcessPnmlFile(f'src/templates/{file_original_name.split("_")[0]}.pnml.template', file_original_name))
         lng_write_list.append(f'STR_NAME_{file_original_name.upper():<48}:{" ".join(file_original_name.split("_")[1:]).replace("_"," ").capitalize()}')
         menu_write_list.append(f'#include "generated/{file_original_name}.pnml"')
 
