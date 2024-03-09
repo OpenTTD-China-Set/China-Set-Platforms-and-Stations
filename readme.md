@@ -1,5 +1,7 @@
 # CNS: Platforms and Stations README
 
+![](https://raw.githubusercontent.com/WenSimEHRP/China-Set-utilities/main/logo.png)
+
 *CNSPS*
 
 ## 1 What is this?
