@@ -23,6 +23,7 @@ The GRF has these requirements:
 |NML||
 |gorender||
 |python3||
+|gcc||
 
 ## 4 Credits
 
