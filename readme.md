@@ -14,7 +14,7 @@ TBC
 
 ## 3 Building
 
-You can get the source at GitHub (https://www.github.com/WenSimEHRP/China-Set-Platforms-and-Stations)
+You can get the source at GitHub ([https://www.github.com/WenSimEHRP/China-Set-Platforms-and-Stations](https://github.com/OpenTTD-China-Set/China-Set-Platforms-and-Stations))
 We suggest building this NewGRF on Windows for maximum compatibility.
 
 The GRF has these requirements:
