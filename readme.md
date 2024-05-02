@@ -1,36 +1,27 @@
-# CNS: Platforms and Stations README
+# CNSPS: Platforms and Stations README
 
-![](https://raw.githubusercontent.com/WenSimEHRP/China-Set-utilities/main/logo.png)
+> [!IMPORTANT]
+> _CNSPS_ is no longer maintained. For the station grf in the China Set family, please look for **CNS China Set: Stations**. Please note that **they use the same grfid**.
 
-*CNSPS*
+## What is this?
+China Set: Platforms and Stations is a NewGRF for OpenTTD. It is a part of the ChinaSet family. This NewGRF contains platforms and stations inspired by real life Chinese stations.
 
-## 1 What is this?
+CNSPS is licensed under GNU GPL version 2.
 
-ChinaSet: Platforms and Stations is a NewGRF for OpenTTD. It is a part of the ChinaSet family. This NewGRF contains platforms and stations inspired by real life Chinese transport stations.
+## Building
+You can get the source at [GitHub](https://www.github.com/openttd-china-set/China-Set-Platforms-and-Stations). We suggest building this NewGRF on Windows for maximum compatibility.
 
-## 2 General information
+The following subjects are required to build the program:
 
-TBC
+- nmlc
+- gorender
+- gcc
+- python 3.10 or higher
 
-## 3 Building
+Please note that the scripts used some external libraries that are not listed here.
 
-You can get the source at GitHub ([https://www.github.com/WenSimEHRP/China-Set-Platforms-and-Stations](https://github.com/OpenTTD-China-Set/China-Set-Platforms-and-Stations))
-We suggest building this NewGRF on Windows for maximum compatibility.
+## Contributors
 
-The GRF has these requirements:
-|Name|Link|
-|---|---|
-|NML||
-|gorender||
-|python3||
-|gcc||
-
-## 4 Credits
-
-During development this project recieved help from 3 people. Here is a list for all the contributors.
-
-|Name|Role|
-|---|---|
-|WenSim|coding, voxel modelling|
-|NACHN|voxel modelling|
-|DongFeng<sub>4</sub> 3110|voxel modelling|
+- WenSim; coding; modelling;
+- NACHN; modelling;
+- Dongfeng<sub>4</sub>  3110; modelling;
