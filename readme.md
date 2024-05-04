@@ -1,7 +1,7 @@
 # CNSPS: Platforms and Stations README
 
 > [!IMPORTANT]
-> _CNSPS_ is no longer maintained. For the station grf in the China Set family, please look for **CNS China Set: Stations**. Please note that **they use the same grfid**.
+> _CNSPS_ is no longer maintained. For the station grf in the China Set family, please look for **CNS China Set: Stations**.
 
 ## What is this?
 China Set: Platforms and Stations is a NewGRF for OpenTTD. It is a part of the ChinaSet family. This NewGRF contains platforms and stations inspired by real life Chinese stations.
